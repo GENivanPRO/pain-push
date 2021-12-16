@@ -1,0 +1,106 @@
+#menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    background-color:blue;
+}
+
+#menu ul {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+#menu > ul::after {
+    display: block;
+    width: 100;
+    height: auto;
+    clear: both;
+    content: " ";
+} 
+
+#menu ul li {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 9px 25px 0px 25px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 40px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+#menu ul li ul {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    display: none;
+    width: 200px;
+    background: blue;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+#menu ul li ul li {
+    float: none;
+    width: 100%;
+}
+
+#menu ul li ul li a {
+    display: block;
+    text-transform: none;
+    height: auto;
+    padding: 7px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    color:white;
+}
+header, footer {
+    background-color:rgb(58, 55, 55);
+}
+
+main {
+    padding: 10px;
+    background-color: silver;
+}
+
+.post0 {
+    
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;background-color: white;
+    padding: 20px;
+}
+.post img {
+    margin: 20px;}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    p { 
+        font-family: 'roboto' ;
+        font-weight:400 ;
+        font-size: 17px;
+        color: rgb(24, 15, 32);
+    }
+    h3 {
+        font-family: 'roboto' ;
+        font-weight:400 ;
+        font-size: 20px;
+        color: rgb(24, 12, 27)
+    }
